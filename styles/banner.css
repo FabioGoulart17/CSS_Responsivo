@@ -1,23 +1,18 @@
 
 .banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: var(--azul-degrade);
     color: var(--branco);
-    height: 215px;
-    width: 100vw; 
-    padding: 20px;
-    box-sizing: border-box;
     text-align: center;
+    padding: 2.5em 2em;
 }
 
 .input_pesquisa {
     border-radius: 24px;
     border: 1px solid var(--branco);
     background-color: transparent;
-    width: 380px;
+    color: var(--branco);
+    padding: 1em;
+    width: 100%;
     height: 44px;
     max-width: 300px;
     
@@ -26,14 +21,18 @@
 .banner__titulo {
     font-family: var(--fonte-principal);
     font-weight: 700;
-    padding: 5px;
 }
 
 .banner__paragrafo {
-    padding: 10px;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.input_pesquisa::placeholder {
     font-family: var(--fonte-principal);
-    line-height: 1.4;
-    word-break: break-word;
+    font-size: 14px;
+    font-weight: 400;
     color: var(--branco);
-    padding-bottom: 30px;
+    text-align: center;
+    background: url(../img/Pesquisa.svg) no-repeat;    
 }
