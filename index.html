@@ -59,32 +59,116 @@
 
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro Apache Kafka Alura Books "></div>
+                <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Livro sobre Gestão 2 da Alura Books"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg"
+                        alt="Livro sobre Acessibilidades da Alura Books"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia Front-end da Alura Books">
+                </div>
+                <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro Liderança da Alura Books"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro Javascript da Alura Books"></div>
+            </div>
+
+            <!-- If we need navigation buttons-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="box__card">
+            <div class="card">
+                <div class="card__conteudo">
+                    <h3 class="titulo__sugestao">Talvez você também se interesse por...</h3>
+                    <h2 class="sugestao__tema">Angular 11 e Firebase</h2>
+                    <p class="descricao__sugestao">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+
+                <img src="img/Angular.svg" alt="Imagem da tecnologia sugerida, Angular">
+            </div>
+
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__item"><img src="img/Sacola.png" alt="Adicionar ao carrinho de compras"></li>
+                </ul>
+
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
+        </div>
+
     </section>
 
-    <!-- Slider main container -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro Apache Kafka Alura Books "></div>
-            <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Livro sobre Gestão 2 da Alura Books"></div>
-            <div class="swiper-slide"><img src="img/Acessibilidade.svg"
-                    alt="Livro sobre Acessibilidades da Alura Books"></div>
-            <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia Front-end da Alura Books"></div>
-            <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro Liderança da Alura Books"></div>
-            <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro Javascript da Alura Books"></div>
+    <section class="livros__destaques">
+        <div class="box_mais_vendidos">
+            <h2 class="titulo_mais_vendidos">Mais Vendidos</h2>
         </div>
 
 
-        <!-- If we need navigation buttons-->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <!-- Slider main container -->
+        <div class="swiper">
 
+            <div class="swiper-pagination"></div>
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/UX.svg" alt="Livro de Java Script"></div>
+                <div class="swiper-slide"><img src="img/Tuning.svg" alt="Livro Guia de Front-end"></div>
+                <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Livro de Liderança"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro de Java Script"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia de Front-end"></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro de Liderança"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Swiper -->
+    <div class="carross mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/ApacheKafka.svg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/Gestão2.svg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/Javascript.svg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/Nodejs.svg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/Acessibilidade.svg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/Guia Front-end.svg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/Tuning.svg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/UX.svg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/ApacheKafka.svg" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -98,7 +182,29 @@
             },
 
         });
+
+        var carross = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+
     </script>
+
+
 
 </body>
 
