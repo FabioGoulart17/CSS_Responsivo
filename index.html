@@ -115,7 +115,7 @@
 
 
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="mySwiper">
 
             <div class="swiper-pagination"></div>
 
@@ -133,41 +133,46 @@
 
         </div>
 
-    </section>
+        <div class="box__card">
+            <div class="card">
+                <div class="card__conteudo">
+                    <img class="estrelinhas" src="img/Estrelinhas.png" alt="Avaliação 5 estrelas">
+                    <h3 class="titulo__sugestao">Autora do Mês</h3>
+                    <h2 class="sugestao__tema">Juliana Agarikov</h2>
+                    <p class="descricao__sugestao">Analista de sistemas e escritora, Juliana é especialista em
+                        Front-End. </p>
+                </div>
 
-    <!-- Swiper -->
-    <div class="carross mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="img/ApacheKafka.svg" />
+                <img src="img/Perfil-escritora 1.png" alt="Imagem da escritora Juliana Agarikov">
             </div>
-            <div class="swiper-slide">
-                <img src="img/Gestão2.svg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="img/Javascript.svg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="img/Nodejs.svg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="img/Acessibilidade.svg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="img/Guia Front-end.svg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="img/Tuning.svg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="img/UX.svg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="img/ApacheKafka.svg" />
+
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__item"><img src="img/Sacola.png" alt="Adicionar ao carrinho de compras"></li>
+                </ul>
+
+                <a href="#" class="botoes__ancora">Saiba mais</a>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
-    </div>
+
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item"><a class="topicos__link" href="#">Android</a></li>
+            <li class="topicos__item"><a class="topicos__link" href="#">Marketing Digital</a></li>
+            <li class="topicos__item"><a class="topicos__link" href="#">Agile</a></li>
+            <li class="topicos__item"><a class="topicos__link" href="#">Startups</a></li>
+            <li class="topicos__item"><a class="topicos__link" href="#">HTML & CSS</a></li>
+            <li class="topicos__item"><a class="topicos__link" href="#">Python</a></li>
+            <li class="topicos__item"><a class="topicos__link" href="#">OO</a></li>
+            <li class="topicos__item"><a class="topicos__link" href="#">Java</a></li>
+        </ul>
+
+
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
