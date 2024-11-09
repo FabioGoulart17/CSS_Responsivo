@@ -36,3 +36,15 @@
     text-align: center;
     background: url(../img/Pesquisa.svg) no-repeat;    
 }
+
+@media screen and (min-width: 1024px) {
+    .banner__titulo {
+        font-size: 36px;
+    }
+
+    .input_pesquisa {
+        width:50%; 
+    }
+
+   
+}

@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
@@ -41,10 +44,38 @@
                 </li>
             </ul>
             <img src="img/Logo.svg" alt="Logo da AluraBook" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo__negrito">Alura</b>Books</h1>
         </div>
 
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes__menu" class="opcoes__botao">
+            <label for="opcoes__menu">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha Estante</a></li>
+        </ul>
+
         <div class="container">
-            <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
             <a href="#"><img src="img/Sacola.png" alt="Carrinho de compras" class="container__imagem"></a>
             <a href="#"><img src="img/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
         </div>
@@ -162,25 +193,27 @@
         <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
         <ul class="topicos__lista">
             <li class="topicos__item"><a class="topicos__link" href="#">Android</a></li>
+            <li class="topicos__item"><a class="topicos__link" href="#">OO</a></li>
             <li class="topicos__item"><a class="topicos__link" href="#">Marketing Digital</a></li>
             <li class="topicos__item"><a class="topicos__link" href="#">Agile</a></li>
             <li class="topicos__item"><a class="topicos__link" href="#">Startups</a></li>
             <li class="topicos__item"><a class="topicos__link" href="#">HTML & CSS</a></li>
-            <li class="topicos__item"><a class="topicos__link" href="#">Python</a></li>
-            <li class="topicos__item"><a class="topicos__link" href="#">OO</a></li>
             <li class="topicos__item"><a class="topicos__link" href="#">Java</a></li>
+            <li class="topicos__item"><a class="topicos__link" href="#">Python</a></li>
         </ul>
 
 
     </section>
 
     <section class="contato">
+        <div class="contato__descricao">
             <h2 class="contato_titulo">Fique por dentro das novidades!</h2>
             <p class="contato_texto">Atualizações de e-books, novos livros, promoções e outros.</p>
-            <input class="input_email" type="email" name="email" placeholder="Cadastre seu e-mail" >
+        </div>
+        <input class="input_email" type="email" name="email" placeholder="Cadastre seu e-mail">
     </section>
 
-    <hr/>
+    <hr />
 
     <footer class="rodape">
         <h2 class="rodape_titulo">Grupo Alura</h2>
