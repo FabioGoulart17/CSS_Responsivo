@@ -5,6 +5,7 @@
 @import url(styles/rodape.css);
 @import url(styles/contato.css);
 
+
 :root {
     --cor-de-fundo: #EBECEE;
     --branco: #FFFFFF; 
@@ -14,6 +15,8 @@
     --fonte_secundario: "Josefin Sans";
     --azul-texto: #002F52;
     --preto: #000000;
+    --cinza: #858585;
+    --cinza-secundario: #474646;
     
 }
 
