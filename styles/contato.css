@@ -52,5 +52,10 @@
         width: 65%;
         line-height: 1.5;
     }
+}
 
+@media screen and (min-width: 1728px){
+    .contato {
+        padding: 3em 20vw;
+    }
 }
